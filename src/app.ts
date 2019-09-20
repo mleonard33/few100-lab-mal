@@ -57,8 +57,6 @@ export function runApp() {
 function calc() {
     if (enterBillAmount.valueAsNumber < 0) {
         enterBillAmount.classList.add('error');
-        // billAmount.innerText = 'ERROR!!';
-        // amountOfTip.innerText = 'ERROR!!';
         amountOfTip.innerText = 'ERROR!!';
     } else {
         let tip = (Math.round((enterBillAmount.valueAsNumber * tipPercent) * Math.pow(10, 2)) / Math.pow(10, 2)).toFixed(2);
