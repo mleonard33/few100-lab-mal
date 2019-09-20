@@ -1,3 +1,13 @@
 h1 {
-    color:red;
+    color: black
 }
+.tipCalculator {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+#enterBillAmount.error {
+    border: 4px solid red;
+    background: yellow
+  }
+

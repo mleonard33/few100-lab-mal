@@ -3,16 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Front End Web 100</title>
+    <title>Tip Calculator</title>
 </head>
 
 <body>
-    <header>
-        <h1>Front End Web 100 Starter</h1>
+    <header class="tipCalculator">
+        <h1>Tip Calculator</h1>
         <h2>Progressive ITU</h2>
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
     </header>
-    <main>
-        
+    <main class="tipCalculator">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+            </div>
+            <input type="number"
+                   id="enterBillAmount"
+                   class="form-control billTotal"
+                   aria-label="Amount (to the nearest dollar)">
+            <span id="output"></span>
+        </div>
+        <div class="btn-group"
+             role="group"
+             aria-label="Basic example">
+            <button type="button"
+                    id="tip10Percent"
+                    class="btn btn-secondary">10%</button>
+            <button type="button"
+                    id="tip15Percent"
+                    class="btn btn-secondary tipPercent">15%</button>
+            <button type="button"
+                    id="tip20Percent"
+                    class="btn btn-secondary tipPercent">20%</button>
+        </div>
+        <div>
+            You are tipping
+            <span id="tipPercentageSelected"></span>
+        </div>
+        <br>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">Bill Amount:
+                    <span id="billAmount"></span></li>
+                <li class="list-group-item">Tip Percentage:
+                    <span id="tipPercentage"></span></li>
+                <li class="list-group-item">Amount of tip:
+                    <span id="amountOfTip"></span></li>
+                <li class="list-group-item">Total to be Paid:
+                    <span id="totalToBePaid"></span></li>
+            </ul>
+        </div>
+
     </main>
 </body>
 
